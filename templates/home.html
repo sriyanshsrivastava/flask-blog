@@ -2,7 +2,7 @@
 
 {% block content %}
      {% for post in posts %}
-        <h1>{{ post.title }}</h1>
+        <h1 class="text-uppercase">{{ post.title }}</h1>
         <p>Created by {{ post.author }} on {{ post.date_posted }}</p>
         <p>{{ post.content }}</p>
     {% endfor %}
