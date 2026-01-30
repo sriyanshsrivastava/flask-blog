@@ -4,7 +4,7 @@ from flask import Flask, render_template
 app = Flask(__name__)
 
 # Dummy data
-    #posts
+#posts
 posts=[
     {
         "author":"Satish",
@@ -20,8 +20,8 @@ posts=[
     }
 ]
 # Routes
-@app.route("/")
-@app.route("/home")
+@app.route("/") # Multiple routes to a function
+@app.route("/home") # Multiple routes to a function
 def index():
     return render_template("home.html", posts=posts)
 
