@@ -2,7 +2,11 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>About - Flask Blog</title>
+    {% if title %}
+        <title>Flask Blog - {{ title }}</title>
+    {% else %}
+        <title>Flask blog</title>
+    {% endif %}
 </head>
 <body>
   <h1>This is About page from templates</h1>
